@@ -1,0 +1,28 @@
+server:
+  port: 8005
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: architecture-service
+
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/architecture_db
+    username: root
+    password: 12345678
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+path:
+  root: D:/software engineering/united/architecture/architecture-master/static/
+  img: Img
+  video: Video
